@@ -36,11 +36,7 @@ export default function LoginPage() {
       navigate('/user');
     } catch (error) {
       setError(error.message || "Contraseña o email incorrectos");
-      Swal.fire({
-        title: "contraseña o email incorrectos!",
-        text: "verifique bien sus credenciales",
-        icon: "error"
-      });
+
     }
   };
 
